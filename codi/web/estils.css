@@ -1,0 +1,52 @@
+body.seccio_registre
+{
+	background-color:white;
+}
+body.seccio_login
+{
+	
+}
+h1
+{
+	color:blue;
+	text-align:center;
+}
+h3
+{
+	color:red;	
+	text-align:center;
+}
+.tabla_login
+{
+	color:red;
+}
+a
+{
+	text-decoration:none;
+}
+a:hover
+{
+	color:red;
+}
+legend
+{
+	color:blue;
+}
+.data_naixement_usuari
+{
+	width:40px;
+}
+.fieldset
+{
+	margin:auto;
+	width:822px;
+}
+div.div_seccio_login
+{
+	background-color:rgb(224,224,224);
+	font-weight:bold;
+	width:320px;
+	height:170px;
+}
+
+
