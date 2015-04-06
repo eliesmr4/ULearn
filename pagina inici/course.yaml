@@ -1,0 +1,226 @@
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS-IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# FIXME: You can use this configuration file to customize Course Builder
+# for a specific course. More information on YAML can be found at:
+#
+#     http://www.yaml.org/spec/1.2/spec.html#id2759963
+#
+# Note that the values in this file can contain arbitrary HTML.
+
+############################
+# General course information
+############################
+
+course:
+  # A new line or a space separated list of email addresses of course
+  # administrative users. Each email address must be placed between '[' and ']',
+  # for example: '[test@example.com]'. Regular expressions are not supported,
+  # exact match only.
+  admin_user_emails: ''
+
+  # Course title
+  title: 'Detección de objetos'
+
+  # Main page blurb. (The '|' at the beginning enables multi-line input.)
+  blurb: |
+    El curso ofrece la oportunidad de aprender las principales técnicas 
+    de visión por computador que permiten detectar y reconocer objetos 
+    en una imagen. Está orientado a estudiantes interesados en adquirir 
+    el conocimiento necesario para el desarrollo de aplicaciones reales 
+    de detección y reconocimiento de objetos.
+
+  title_acerca: 'Acerca del curso'
+  acerca_c: |
+    En este curso se introducen los principios básicos de cualquier sistema 
+    automático de detección y reconocimiento de objetos en imágenes. A lo largo 
+    del curso se analizan diferentes métodos de representación y clasificación 
+    que permiten abordar casos de aplicación de complejidad creciente.<br> <br> 
+    El curso está orientado tanto a estudiantes universitarios de algún 
+    grado relacionado con la informática, la ingeniería o las matemáticas,
+    como a otros estudiantes con conocimientos de programación, interesados 
+    en aprender cómo utilizar técnicas de visión por computador para extraer 
+    información de las imágenes. El curso les ofrece los conocimientos y 
+    herramientas necesarios para que sean capaces de desarrollar sus propios 
+    sistemas de detección y reconocimiento de objetos en múltiples aplicaciones.<br> <br> 
+    El contenido del curso se estructura a partir de un esquema básico de detección 
+    y reconocimiento de objetos que sirve de guía para ir introduciendo tanto los 
+    diferentes métodos de extracción de características y representación de la 
+    imagen como diferentes alternativas para clasificar una imagen y para localizar 
+    todas las instancias de un objeto en la imagen. El temario del curso incluye 
+    conceptos básicos de formación de la imagen, la convolución y su aplicación a 
+    la detección de contornos, características de regiones, descriptores de imagen 
+    (Local Binary Pattern, Histogram of Oriented Gradients, características de Haar) 
+    y varios métodos de clasificación (clasificador lineal, Support Vector Machine,
+     Adaboost, Random Forest, Convolutional Neural Network).
+
+  title_conocimientos: 'Conocimientos previos'
+  conocimientos_p: |
+    El curso está orientado a cualquier estudiante potencial 
+    interesado en conocer cómo se pueden desarrollar aplicaciones que
+    incluyan el reconocimiento automático de objetos en imágenes, 
+    principalmente estudiantes que estén cursando o hayan completado 
+    algún grado universitario en el ámbito de la ingeniería, matemáticas, 
+    física o similar. <br>
+    Durante el curso se proporcionarán todos los conceptos necesarios  
+    específicamente relacionados con el análisis y clasificación de las imágenes. 
+    Para poderlos seguir de forma adecuada se recomienda tener, al menos, ciertos 
+    conocimientos matemáticos a nivel de primer curso universitario (álgebra lineal 
+      y cálculo) y experiencia en algún lenguaje de programación (C/C++, Python, java, …)
+
+  # Information about the instructor to display on the main page.
+  instructor_details: 'Antonio López Peña <br> Ernest Valveny  <br> Maria Vanrell'
+
+  # You can choose whether you want a video or an image on the main page.
+  # If you specify both a video and an image link, then the video will take
+  # priority. The image alt text allows the image to be understood by text-only
+  # screen readers.  
+  main_image:
+    url: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/b6/83d8b09ff711e485c2d724da19432b/logoObjectDetection.jpg?auto=format&dpr=1&w=290
+    alt_text: Deteccción de objetos
+
+  # Course start date.  
+  start_date: '5 Octubre, 2015'
+  language: 'Castellano'
+  faculty: 'Enginyeria'
+
+  # Forum URL. For details, see
+  #
+  #     http://code.google.com/p/course-builder/wiki/WebForums.
+  forum_email: My-Course@googlegroups.com
+  forum_url: https://groups.google.com/group/My-Course
+
+  # Forum embedding URL. This link is used to embed the forum in an iframe on
+  # the forum.html page. Set this value to False if you don't use forum and/or
+  # to remove the Forum link from the student navigation bar.
+  forum_embed_url: https://groups.google.com/forum/embed/?place=forum/My-Course
+
+  # URL for the mailing list where students can register to receive course
+  # announcements. For details, see
+  #
+  #     http://code.google.com/p/course-builder/wiki/CreateEmailList
+  announcement_list_email: My-Course-Announce@googlegroups.com
+  announcement_list_url: https://groups.google.com/group/My-Course-Announce
+
+  # Locale for internationalization. See modules/i18n/resources/locale for
+  # available locales.
+  locale: 'ca'
+
+  # Whether the course is open to the students.
+  now_available: true
+
+  # Whether the course material can be accessed without requiring users to log
+  # in or register.
+  browsable: true
+
+  # Google Analytics tag: Fill this in with a value obtained by signing up
+  # at http://www.google.com/analytics.  Note that you may wish instead to
+  # use Google Tag Manager, which can forward event notifications to Google
+  # Analytics, as well as to any other user-activity-watcher you like.
+  # Change the value below to replace the '#' with the full text of your
+  # individual ID number, which will start with 'UA-'.  When set, pages will
+  # notify Google Analytics that they have loaded.  See views/base.html.
+  #
+  # If this tag is not present, boilerplate JavaScript to notify Google
+  # Analytics is not emitted.  Not having a value here is harmless.
+  google_analytics_id: ''
+
+  # Google Tag Manager ID: Fill this in with a value obtained by signing up
+  # at http://www.google.com/tagmanager.  When this ID is present, pages will
+  # notify the tag manager (see views/base.html).  This will load a script
+  # from Tag Manager which can then emit notifications to other user activity
+  # trackers.  This neatly decouples changes to the source code of your
+  # course and CourseBuilder deployment from whatever tracking analytics
+  # you wish to perform.  (Note that if you wish to track activities more
+  # granular than page loads, you will need to mark up your course
+  # to send notifications to the tag manager.)
+  #
+  # If this tag is not present, boilerplate JavaScript to notify Google
+  # Tag Manager is not emitted.  Not having a value here is harmless.
+  google_tag_manager_id: ''
+
+########################
+# Course preview page
+########################
+
+preview:
+  # HTML to be included in the course preview page.
+  after_top_content_ends: '<!-- preview.after_top_content_ends -->'
+  after_main_content_ends: '<!-- preview.after_main_content_ends -->'
+
+
+##########################
+# Course registration form
+##########################
+
+reg_form:
+  # Header text for the course registration form.
+  header_text: |
+    Welcome!  Please answer the following question, and you will be
+    enrolled in the course.
+
+  # HTML representing additional fields to include in the course
+  # registration form, in addition to the student's name. These should
+  # be wrapped in <li></li> tags.
+  additional_registration_fields: '<!-- reg_form.additional_registration_fields -->'
+
+  # Whether to allow new students to register for the course.
+  can_register: True
+
+  # Whitelist of student email addresses who are allowed to register for
+  # the course.  Each email must be surrounded by '[' and ']'.  E.g,
+  # "[foo@bar.com] [quux@bar.com]"
+  whitelist: ''
+
+##############################
+# Assessment confirmation page
+##############################
+
+# HTML to be displayed on the final assessment's confirmation page (which is
+# displayed when the student has completed the final assessment). You can
+# optionally add code here to load or generate a Certificate of Completion
+# image. Note that the result text includes a '%s', which will be substituted
+# with the student's actual score. ('%%' results in a single '%'.)
+assessment_confirmations:
+  result_text:
+    pass: |
+      Based on your overall course score of %s%%, you have passed the course.
+      Congratulations!
+    fail: |
+      Unfortunately, based on your overall course score of %s%%, you did not
+      receive a sufficiently high score to obtain a certificate of completion.
+      We encourage you to review the lessons noted and to attempt the
+      assessment again before it closes. Certificate or not, we hope you
+      enjoyed taking the course and learned new skills!
+
+
+########################
+# Units and lessons page
+########################
+
+unit:
+  # HTML to be included in the course unit/lesson pages.
+  after_leftnav_begins: '<!-- unit.after_leftnav_begins -->'
+  before_leftnav_ends: '<!-- unit.before_leftnav_ends -->'
+  after_content_begins: '<!-- unit.after_content_begins -->'
+  before_content_ends: '<!-- unit.before_content_ends -->'
+
+  # Whether or not to hide the 'Previous Page' and 'Next Page' lesson
+  # navigation buttons at the bottom of lesson and activity pages.
+  hide_lesson_navigation_buttons: False
+
+  # Whether or not to hide the 'Previous Page' and 'Next Page' lesson
+  # navigation buttons below pre/post assessments within units.
+  hide_assessment_navigation_buttons: False
+
+  # Whether to show the unit links in the side bar.
+  show_unit_links_in_leftnav: True
