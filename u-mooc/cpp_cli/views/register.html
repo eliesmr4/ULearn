@@ -1,0 +1,47 @@
+{% extends 'base_registration.html' %}
+
+{% block top_content %}
+
+{% endblock %}
+
+{% block main_content %}
+<div class="row-fluid">
+  <div class="gcb-article tab-content">
+    <div class="gcb-aside">
+
+      <p>
+        {{course_info.reg_form.header_text | safe}}
+      </p>
+
+      <form action="register" method='post'>
+        <input type="hidden" name="xsrf_token" value="{{ register_xsrf_token|escape }}">
+        <fieldset>
+          <ol>
+            <li>
+              <label class="form-label" for="form01">
+                {# I18N: A question in the registration form. #}
+                {{ gettext('What is your name?') }}
+              </label>
+              <input name="form01" type="text">
+            </li>
+			<li>
+              <label class="form-label" for="form02">
+                {# I18N: A question in the registration form. #}
+                {{ gettext('What is your age?') }}
+              </label>
+              <input name="form02" type="text">
+            </li>
+            {{course_info.reg_form.additional_registration_fields | safe}}
+          </ol>
+        </fieldset>
+
+        <button class="btn btn-primary" type="submit">
+          {# I18N: Button at the end of the registration form for a course. #}
+          {{ gettext('Enroll') }}
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

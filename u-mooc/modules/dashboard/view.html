@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="google" lang="en">
+  <head>
+    <base href="{{ gcb_course_base }}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>{{ page_title }}</title>
+    <link rel="icon" href="" />
+	<!--<link href="assets/css/main.css" rel="stylesheet" type="text/css">-->
+    <!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=2.0">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<!--<link href="assets/css/main.css" rel="stylesheet">-->
+
+	<style>
+	.progress{
+	margin-bottom:0px;
+	}
+	</style>
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+    <!-- jQuery should be imported first -->
+    <script src="assets/lib/jquery-1.7.2.min.js"></script>
+    <!--<style>
+        body, h3 {
+          margin: 0px;
+          padding: 0px;
+        }
+        body {
+          background-color: #f5f5f5;
+        }
+        form {
+          display: inline;
+        }
+        html, body, table, td, th {
+          font-family: arial,sans-serif;
+          font-size: 13px;
+        }
+        table {
+          width: 100%;
+          border-width: 1px;
+          border-spacing: 2px;
+          border-style: outset;
+          border-color: gray;
+          border-collapse: collapse;
+        }
+        table th {
+          border-width: 1px;
+          padding: 4px;
+          background-color: #f5f5f5;
+          border-style: inset;
+          border-color: gray;
+          text-align: center;
+        }
+        table td {
+          border-width: 1px;
+          padding: 8px;
+          border-style: inset;
+          border-color: gray;
+        }
+        div#gcb-user-bar {
+          padding: 4px;
+          float: right;
+          margin-right: 32px;
+        }
+        div#gcb-nav-bar {
+          margin: 0px;
+          padding: 8px;
+          background-color: #009A5D;
+          text-align: center;
+        }
+        div#gcb-main-area {
+          background-color: #FFFFFF;
+          text-align: center;
+        }
+        div#gcb-section {
+          padding-bottom: 4px;
+        }
+        div#gcb-main-content {
+          padding: 32px;
+          text-align: left;
+        }
+        div#gcb-footer {
+          text-align: center;
+          font-size: smaller;
+          padding: 4px;
+          border-top: solid 1px #B0FFB0;
+        }
+        h2 {
+          margin-left: 32px;
+        }
+        h3 {
+          border-bottom: solid 1px #999999;
+        }
+        p.page-description {
+          margin: 0;
+          padding: 0.4em 0 0 1em;
+          width: 40em;
+          text-align: left;
+        }
+        p.page-description, p.description {
+          font-size: 80%;
+          color: #666;
+        }
+        div#gcb-alerts-bar {
+          background-color: #ffffB7;
+          border: solid #cccca0 1px;
+          display: inline-block;
+          padding: 0.4em;
+          border-radius: 5px;
+          margin-top: 4px;
+        }
+        div#gcb-nav-bar a {
+          padding-left: 8px;
+          padding-right: 8px;
+          font-family: "open sans",arial,sans-serif;
+          font-size: 125%;
+          color: #FFFFFF;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        div#gcb-nav-bar a:focus, div#gcb-nav-bar a:hover, div#gcb-nav-bar a:active {
+          text-decoration: underline;
+        }
+        div#gcb-nav-bar a.selected {
+          text-decoration: underline;
+        }
+        div#formContainer {
+          margin: 0;
+        }
+        .btn btn-primary {
+          font-family: "open sans",arial,sans-serif;
+          font-weight: bold;
+          font-size: inherit;
+          margin: 0px 0px 0px 8px;
+          padding: 4px 8px 4px 8px;
+          background-color: #404040;
+          color: #FFFFFF;
+          text-decoration: none;
+          border: none;
+        }
+        .pull-right {
+          float: right;
+        }
+        #gcb-section pre {
+          padding: 0px;
+          margin: 0px;
+        }
+        span.draft-label {
+          color: #999;
+        }
+        .strong {
+          font-weight: bold;
+        }
+    </style>-->
+  </head>
+  <body >
+  <!-- Modal Informaci&oacute;n -->
+	<div id="myPrivacy" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myPrivacyLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myPrivacyLabel">Términos y condiciones</h3>
+	  </div>
+	  <div class="modal-body">
+		<p>Usted se compromete a no reproducir, duplicar, copiar, vender, revender o explotar con algún prop&oacute;sito comercial cualquier parte de los servicios prestados de la plataforma o los cursos.
+Para uso no comercial, puede hacer lo que desee con ello.
+<br/>
+<br/>
+¡Recuerde referenciar siempre sus notas y publicaciones!.</p>
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+	  </div>
+	</div>
+  <div class="container">
+  
+  
+  <div id='gcb-nav-bar' class="">
+  <div class="navbar">
+      <div class="navbar-inner">
+	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+		<span class="brand">
+		Dashboard
+		</span>
+	   <div class="nav-collapse collapse">
+	     <ul class="nav">
+        {{ top_nav }}
+		</ul>
+		<ul id='gcb-user-bar' class="nav pull-right">
+    <li>{{ user_nav }}</li>
+  </ul>
+		</div>
+		</div>
+		</div>
+
+  </div>
+  <ul class="breadcrumb">
+  {{ page_title }}
+  </ul>
+  <div id='gcb-main-area'>
+    {% if alerts %}
+      <div id="gcb-alerts-bar" class="alert">
+        {{ alerts }}
+      </div>
+    {% endif %}
+    {% if page_description %}
+      <p class="page-description ">
+        {{ page_description }}
+      </p>
+    {% endif %}
+    {% if sections %}
+    <div id='gcb-main-content'>
+      {% for section in sections %}
+      <div id='gcb-section' class="thumbnail">
+        {% for action in section.actions %}
+          {% if action.href %}
+          <a id='{{ action.id }}' class="btn btn-primary pull-right" role="button"
+              href="{{ action.href }}" >{{ action.caption }}</a>
+          {% else %}
+          <form id='{{ action.id }}' action='{{ action.action }}' method='POST'>
+            <input type="hidden" name="xsrf_token" value="{{ action.xsrf_token }}">
+            <button class="btn btn-primary pull-right" type="submit">{{ action.caption }}</button>
+          </form>
+          {% endif %}
+        {% endfor %}
+        {% if section.actions %}
+          <div style='clear: both; padding-top: 2px;' />
+        {% endif %}
+        <h3 class="well well-small">{{ section.title }}</h3>
+        {% if section.description %}
+          <p class="description">
+            {{ section.description }}
+          </p>
+        {% endif %}
+        {% if section.pre %}
+        {{ section.pre }}
+        {% else %}
+        <ol>
+          {% if not section.children %}
+          &lt; none &gt;
+          {% endif %}
+          {% for item in section.children %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ol>
+        {% endif %}
+      </div>
+	  <br/>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if main_content %}
+    <div id='gcb-main-content'>
+        {{ main_content }}
+    </div>
+    {% endif %}
+  </div>
+  <!-- footer section -->
+    <footer>
+	<div class="row-fluid" id='gcb-footer'>
+      <div class="navbar">
+	  
+	
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li>
+              <a href="http://u-mooc.appspot.com">U-MOOC</a>
+            </li>
+			
+            <li>
+              <a href="#myPrivacy" data-toggle="modal">
+                Privacy & Terms
+              </a>
+            </li>
+			<li class="pull-right">
+              <a> {{ page_footer }}</a>
+            </li>
+          </ul>
+        </div>
+		</div>
+		</div>
+		
+    </footer
+  
+  </div>
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap-transition.js"></script>
+    <script src="/assets/js/bootstrap-modal.js"></script>
+    <script src="/assets/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/js/bootstrap-tab.js"></script>
+    <script src="/assets/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/js/bootstrap-popover.js"></script>
+    <script src="/assets/js/bootstrap-button.js"></script>
+    <script src="/assets/js/bootstrap-collapse.js"></script>
+    <script src="/assets/js/bootstrap-carousel.js"></script>
+    <script src="/assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>
